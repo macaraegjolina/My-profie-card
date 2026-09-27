@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<x<head>
+  <!-- makes the website responsive to mobile -->
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&display=swap" rel="stylesheet">
+
+<meta xnamaaxe="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Profile</title>
+<style>
+body{
+  /* makes the content center */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  font-family: Arial, sans-serif;
+  }
+
+.card{
+  width: 350px;
+  background: white;
+  padding: 30px;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  }
+
+img{
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 5px solid #74ebd5;
+  display: block;
+  margin: auto;
+  }
+
+h2{
+  font-family: 'Dancing Script', cursive;
+  font-size: 45px;
+  color: #8b5cf6;
+  }
+
+p{
+  font-family: Arial, sans-serif;
+  color: #666;
+ }
+
+
+button{
+  background: #4CAF50;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 16px;  
+  }
+
+button:hover{
+  background: #45a049;
+  }
+
+button:disabled{
+  background: gray;
+  }
+
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+    <!-- alt will be the name of the image when browser fails to load it -->
+ <img src="myphoto.jpg" alt="Profile Picture">
+    <!-- replace with your name -->
+ <h2>Jolina Marie R. Macaraeg</h2>
+    <!-- replace with a little something about yourself. -->
+ <p>BSIT 2-3</p>
+<button id="contactBtn">Contact</button>
+
+</div>
+
+<script>
+    // Declare a variable to store the button element
+    // Add a click event listener to the button
+
+    // when button clicked, change the text of the button to "Email Sent!" and disable the button. Disabled buttons should be colored gray.
+  const button = document.getElementById("contactBtn");
+
+  button.addEventListener("click", function(){
+
+  button.textContent = "Email Sent!";
+  button.disabled = true;
+
+  });
+
+</script>
+
+
+</body>
+</html>
